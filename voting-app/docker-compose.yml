@@ -1,0 +1,29 @@
+version: '3'
+services:
+  vote:
+    image: voting-app:latest
+    ports:
+    - "8080:80"
+  result:
+    image: result-app:latest
+    ports:
+    - "8081:80"
+    depends_on:
+      - "db"
+  worker:
+    image: worker:latest
+    depends_on:
+      - "redis"
+      - "db"
+  redis:
+    image: redis:alpine
+    container_name: redis
+    ports:
+    - "6379:6379"
+  db:
+    image: postgres:9.4
+    container_name: db
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+    - "5432:5432"
