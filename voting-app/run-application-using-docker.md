@@ -3,12 +3,12 @@ Note:
 Build the docker images on local system and run the following docker commands 
 
 1. Redis 
-We are going to use public image, following command will download the run the redis docker container
+We are going to use public image, following command will download & run the redis docker container
 
 # docker run -it -d -p 6379:6379 --name=redis redis:alpine
 
 2. posgres 
-We are going to use public postgres image, follwing command will dosnload the run postgres container
+We are going to use public postgres image, follwing command will download & run postgres container
 
 # docker run -it  -p 5432:5432 -d  -e POSTGRES_PASSWORD=postgres --name db postgres:9.4
 
