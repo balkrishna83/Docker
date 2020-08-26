@@ -2,7 +2,7 @@
 
 Note: build the images first on local docker system
 - start all the application
-docker-compose up -d 
+#docker-compose up -d 
 
 - stop and remove containers
 #docker-compose down 
