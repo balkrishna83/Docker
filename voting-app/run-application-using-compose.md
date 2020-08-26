@@ -26,3 +26,6 @@ Note: build the images first on local docker system
 
 - To list container ids 
 #docker-compose ps -q worker
+
+# build and run the application using docker-compose 
+#docker-compose -f docker-compose-build-images.yml up -d
