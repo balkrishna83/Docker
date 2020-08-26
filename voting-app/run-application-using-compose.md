@@ -1,6 +1,6 @@
 # Docker-compose commands 
 
-Note: build the containers first on local docker system
+Note: build the images first on local docker system
 - start all the application
 docker-compose up -d 
 
