@@ -18,7 +18,7 @@ Note: build the images first on local docker system
 
 - scale the specifc container  
  Note: Modify the port range before scale 
- In compose file - "8080:80" replace with - "8082:80"
+ In compose file - "8080:80" replace with - "8090-8092:80"
  #docker-compose  up -d --scale vote=3 
 
 - To scale multiple containers at same time 
